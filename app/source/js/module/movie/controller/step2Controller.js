@@ -2,7 +2,6 @@
  * Created by tedyuen on 2017/2/28.
  */
 rmApp.controller('step2Controller',['$scope','$state',function ($scope,$state) {
-  $scope.step = "step2";
 
   $scope.seats = [
   ];
