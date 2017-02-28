@@ -1,0 +1,29 @@
+*{    box-sizing: inherit;     -webkit-tap-highlight-color: transparent;}
+#hongbao{background-color: #d00023; font-family: Helvetica Neue,Tahoma,Arial,PingFangSC-Regular,Hiragino Sans GB,Microsoft Yahei,sans-serif;}
+#hongbao .header-image{width: 100%;}
+#hongbao .hongbao-body{padding: 0 10px; margin: 0 auto;}
+#hongbao .hongbao-box{text-align: center; padding: 20px 25px;}
+#hongbao .hongbao-invite{background: url(../images/hongbao-invite.png) no-repeat; background-size:cover;}
+#hongbao .hongbao-content-amount{color: #4f80bc; margin-bottom: 10px; font-size: 20px;}
+#hongbao .hongbao-content-amount span{color: #f85f42; }
+#hongbao .hongbao-content-amount span:nth-of-type(2){color: #f85f42; font-size: 30px;}
+#hongbao .hongbao-content-info{color: #7b9ec8; margin-bottom: 10px; font-size: 18px;}
+#hongbao .phonenumber{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    /*outline: none;*/
+    /*border: none;*/
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .75);
+    margin-bottom: 10px;
+    line-height: 25px;
+    width: 100%;
+}
+#hongbao .btn{background: #3190e8; color: white; padding: 10px 0; border-radius: 3px; font-size: 16px; line-height: 25px; display:inline-block; width: 100%; cursor: pointer}
+#hongbao #success{display: none; color: #3190e8; font-size: 40px; line-height: 50px;}
+#hongbao .explain{color: rgba(255, 255, 255, .6); font-size: 18px; margin: 30px 0 50px 0;}
+#hongbao .explain h3{text-align: center; margin-bottom: 10px;}
+#hongbao .explain ol{margin: 0; padding-left: 25px; list-style: decimal;}
+#hongbao .explain ol li{margin-bottom: 5px; line-height: 22px;}

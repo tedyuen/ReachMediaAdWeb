@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" type="text/css" href="../css/zyq-main.css">
+    <link rel="stylesheet" type="text/css" href="../css/hongbao.css">
+    <title>微信红包</title>
+</head>
+<body id="hongbao">
+<div>
+    <img src="../images/header-image.jpeg" class="header-image">
+</div>
+<div class="hongbao-body">
+    <div class="hongbao-box hongbao-invite">
+        <p class="hongbao-content-amount">
+            最高 <span>¥</span> <span>15</span> 红包
+        </p>
+        <p class="hongbao-content-info">
+            更有最高35元新人礼包
+        </p>
+        <p id="success">领取成功</p>
+        <input type="tel" id="phone" placeholder="请输入手机号领取红包" maxlength="11" class="phonenumber">
+        <a class="btn" id="btn">立即领取</a>
+    </div>
+    <div class="explain">
+        <h3>一&nbsp;&nbsp;活动细则&nbsp;&nbsp;一</h3>
+        <ol>
+            <li><p>发送至该手机号的红包需在饿了么App内注册后方可使用，手机号归属地需为饿了么覆盖城市；</p>
+            </li>
+            <li><p>使用红包时的手机号需为领取红包时所使用的手机号；</p>
+            </li>
+            <li><p>每张订单仅限使用一个红包，红包不找零；</p>
+            </li>
+            <li><p>15元红包仅限新用户领取，红包有效期为5天；</p>
+            </li>
+            <li><p>相同手机号、支付账号、饿了么账号与硬件设备均视为同一个用户；</p>
+            </li>
+            <li><p>饿了么保留法律范围内的最终解释权；如有其它疑问请咨询官方客服。</p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/hongbao.js"></script>
+<script>
+    $(function(){
+        hongbao.init();
+    });
+</script>
+</body>
+</html>

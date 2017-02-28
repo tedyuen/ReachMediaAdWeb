@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row m-t-10">
+    <div class="col-sm-12">
+      <div class="title">
+        <span>和平影都</span>
+        <span>
+          7<sup>.8</sup>
+        </span>
+      </div>
+      <p>西藏中路290号（近汉口路）</p>
+    </div>
+  </div>
+</div>
+<div class="line"></div>
+<div class="container">
+  <div class="row choise-date">
+    <ul>
+      <li ng-repeat="date in dates" ng-click="switch(date)" ng-class="{'active':date.now}">{{date.name}}{{date.time|date:'MM月dd日'}}</li>
+    </ul>
+  </div>
+</div>
+<div class="line"></div>
+<div class="list-data">
+
+  <div class="timeline" ng-repeat="timeline in timelines" ng-click="goSecondStep()">
+    <div class="cell time">
+      <div class="first">{{timeline.starttime}}</div>
+      <div class="second">{{timeline.endtime}}</div>
+    </div>
+    <div class="cell room">
+      <div class="first">{{timeline.language}}</div>
+      <div class="second">{{timeline.position}}</div>
+    </div>
+    <div class="cell price">{{timeline.price}}</div>
+    <div class="bottom"></div>
+  </div>
+
+</div>

@@ -1,0 +1,50 @@
+<div class="seat-frame">
+  <div class="seat-title">
+    <ul>
+      <li>
+        <img src="images/seat_green.png" width="20" alt="已选">
+        <span>已选</span>
+      </li>
+      <li>
+        <img src="images/seat_red.png" width="20" alt="已售">
+        <span>已售</span>
+      </li>
+      <li>
+        <img src="images/seat_white.png" width="20" alt="可选">
+        <span>可选</span>
+      </li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+
+  <div class="screen-line">
+    <div class="center-line"></div>
+    <div class="center-box">
+      6楼3号厅&nbsp;银幕
+    </div>
+  </div>
+
+  <div class="seat-center">
+    <div ng-repeat="seat in seats" ng-click="doSeat(seat)">
+      <img ng-if="seat.type==0" src="images/seat_white.png" width="20">
+      <img ng-if="seat.type==1" src="images/seat_green.png" width="20">
+      <img ng-if="seat.type==2" src="images/seat_red.png" width="20">
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div>
+    <div class="left">
+      极限特工:终极回归 <span>3D</span>
+      <br>02月28日&nbsp;周二&nbsp;17:30
+    </div>
+    <div class="right" ng-class="{'active':price>0}" ng-click="goThirdStep()">
+      <span ng-if="price>0">确定&nbsp;¥{{price}}</span>
+      <span ng-if="price<=0">请选座</span>
+    </div>
+  </div>
+
+
+
+</footer>
