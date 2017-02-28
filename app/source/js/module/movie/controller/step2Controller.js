@@ -1,7 +1,7 @@
 /**
  * Created by tedyuen on 2017/2/28.
  */
-rmApp.controller('step2Controller',['$scope','$state',function ($scope,$state) {
+rmApp.controller('step2Controller',['$scope','$state','$timeout','loadingService',function ($scope,$state,$timeout,loadingService) {
 
   $scope.seats = [
   ];
@@ -36,7 +36,11 @@ rmApp.controller('step2Controller',['$scope','$state',function ($scope,$state) {
 
   $scope.goThirdStep = function () {
     if($scope.price>0){
-      $state.go('step3');
+      loadingService.showLoading();
+      $timeout(function () {
+        loadingService.closeLoading();
+        $state.go('step3');
+      },500);
     }
   }
 

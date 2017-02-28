@@ -56,6 +56,8 @@ module.exports = {
     arr: [
       './app/source/js/module/movie/main.js',
       './app/source/js/module/movie/route.js',
+      './app/source/js/module/service/**/*.js',
+      './app/source/js/module/movie/utils/jquery.blockUI.js',
       './app/source/js/module/movie/controller/**/*.js',
       // './app/source/js/module/custom.js',
       // './app/source/js/module/waves.js',

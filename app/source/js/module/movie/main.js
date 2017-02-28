@@ -4,7 +4,6 @@
 global.$ = global.jQuery = require('jquery');
 
 require('bootstrap');
-
 require('angular');
 require('angular-cookies');
 require('angular-ui-router');

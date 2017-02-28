@@ -1,7 +1,7 @@
 /**
  * Created by tedyuen on 2017/2/28.
  */
-rmApp.controller('step1Controller',['$scope','$state',function ($scope,$state) {
+rmApp.controller('step1Controller',['$scope','$state','$timeout','loadingService',function ($scope,$state,$timeout,loadingService) {
 
   $scope.dates = [];
 
@@ -27,7 +27,13 @@ rmApp.controller('step1Controller',['$scope','$state',function ($scope,$state) {
   }
 
   $scope.goSecondStep = function () {
-    $state.go('step2');
+
+    loadingService.showLoading();
+    $timeout(function () {
+      loadingService.closeLoading();
+      $state.go('step2');
+    },500);
+
   }
 
   var getNow = function () {
