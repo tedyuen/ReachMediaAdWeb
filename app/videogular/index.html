@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="zh">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>怦然心动</title>
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+  <div ng-controller="HomeCtrl as controller" class="videogular-container">
+    <videogular vg-theme="controller.config.theme.url">
+      <vg-media vg-src="controller.config.sources"
+                vg-tracks="controller.config.tracks"
+                vg-native-controls="true">
+      </vg-media>
+    </videogular>
+  </div>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-sanitize.min.js"></script>
+  <script src="js/videogular.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
