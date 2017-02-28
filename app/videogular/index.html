@@ -12,8 +12,10 @@
   <div ng-controller="HomeCtrl as controller" class="videogular-container">
     <videogular vg-theme="controller.config.theme.url">
       <vg-media vg-src="controller.config.sources"
-                vg-tracks="controller.config.tracks"
-                vg-native-controls="true">
+                vg-native-controls="true"
+                vg-loop="true">
+        <!--vg-tracks="controller.config.tracks"-->
+
       </vg-media>
     </videogular>
   </div>
