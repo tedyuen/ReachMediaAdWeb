@@ -19,9 +19,52 @@
       </vg-media>
     </videogular>
   </div>
+  <div ng-controller="PanelCtrl as controller">
+    <div class="brief-module border-bottom">
+      <div class="video-action">
+        <div class="img-src video-num fl">
+          <span>{{current.playTime}}</span>
+        </div>
+        <div class="fr">
+          <a class="img-src praise" ng-class="{'praised':praised}" ng-click="switchPraised();">
+            <span class="whiteBack" style="position: absolute">319</span>
+            <span>319</span>
+          </a>
+          <a class="img-src collect" ng-class="{'collected':collected}" ng-click="switchCollected()"></a>
+        </div>
+      </div>
+    </div>
+    <div class="other-video border-bottom">
+      <div class="module clearfix">
+        <div class="module-name fl">
+          大家都在看
+        </div>
+        <ul class="ov-list">
+          <li class="clearfix" ng-repeat="data in listData" ng-click="goUrl(data)">
+            <div class="v">
+              <img ng-src="{{data.imgUrl}}" style="width:100%;height:100%">
+              <div class="v-duration">0:15</div>
+            </div>
+            <div class="v-item">
+              <div class="h2">
+                <span>{{data.title}}</span>
+              </div>
+              <div class="img-src v-num">{{data.playTime}}</div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
   <script src="js/angular.min.js"></script>
   <script src="js/angular-sanitize.min.js"></script>
   <script src="js/videogular.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/PanelCtrl.js"></script>
 </body>
 </html>

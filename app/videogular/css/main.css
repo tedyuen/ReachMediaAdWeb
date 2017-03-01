@@ -47,3 +47,205 @@ html, body {
 }
 
 /*# sourceMappingURL=main.css.map */
+.brief-module {
+  padding: 19px 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-src {
+  background: url(../images/gather.png) no-repeat;
+  background-size: 54px 1400px;
+}
+
+.video-action .video-num {
+  padding-left: 19px;
+  background-position: 0 -1155px;
+  color: #999;
+  font-size: 14px;
+}
+.video-action .praise {
+  color: #555;
+  height: 26px;
+  line-height: 26px;
+  background-position: 0 -34px;
+  padding-left: 15px;
+  position: relative;
+  top: -5px;
+}
+.video-action .praise.praised {
+  padding-left: 15px;
+  background-position: 0 -820px;
+}
+.video-action .collect{
+  color: #555;
+  height: 26px;
+  line-height: 26px;
+  background-position: 0 -72px;
+  padding-left: 35px;
+  position: relative;
+  top: -3px;
+
+  margin-left: 1pc;
+}
+
+.video-action .collect.collected {
+  background-position: 0 -780px;
+}
+
+
+
+
+.video-action .whiteBack {
+  position: absolute;
+  color: #fff;
+  -webkit-text-stroke-width: 4px;
+  -moz-text-stroke-width: 4px;
+  text-stroke-width: 4px;
+}
+
+.video-action .praise span, .video-action .praised span, .video-action .praisedNone span {
+  position: relative;
+  top: 6px;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.border-bottom {
+  border-bottom: 8px solid #e6e6e6;
+}
+
+
+.module {
+  position: relative;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebebeb;
+  overflow: hidden;
+}
+
+.module:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background: #218aff;
+  border-radius: 20px;
+}
+
+.clearfix {
+  zoom: 1;
+  clear:both;
+}
+
+.module-name {
+  width: 100%;
+  padding-left: 10px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 17px;
+  margin: 1px 0;
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+
+}
+.module-name.fl {
+  position: relative;
+  top: 1px;
+}
+
+.ov-list li {
+  border-bottom: 1px solid #ebebeb;
+  height: 70px;
+  padding: 8px 10px 8px 145px;
+  position: relative;
+  list-style: none;
+}
+
+.ov-list .v {
+  width: 125px;
+  height: 70px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background-size: contain;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.v-duration {
+  padding-top: 20px;
+  margin-right: 5px;
+  position: absolute;
+  bottom: 0;
+  right:5px;
+  width: 110px;
+  height: 20px;
+  text-align: right;
+  color:#fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(51, 51, 51, 0)), color-stop(21%, rgba(51, 51, 51, .08)), color-stop(25%, rgba(51, 51, 51, .1)), color-stop(33%, rgba(51, 51, 51, .15)), color-stop(37%, rgba(51, 51, 51, .18)), color-stop(45%, rgba(42, 42, 42, .23)), color-stop(49%, rgba(38, 38, 38, .25)), color-stop(60%, rgba(3, 3, 3, .3)), color-stop(61%, rgba(0, 0, 0, .31)), color-stop(100%, rgba(0, 0, 0, .65)));
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0) 0, rgba(51, 51, 51, .08) 21%, rgba(51, 51, 51, .1) 25%, rgba(51, 51, 51, .15) 33%, rgba(51, 51, 51, .18) 37%, rgba(42, 42, 42, .23) 45%, rgba(38, 38, 38, .25) 49%, rgba(3, 3, 3, .3) 60%, rgba(0, 0, 0, .31) 61%, rgba(0, 0, 0, .65) 100%);
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0) 0, rgba(51, 51, 51, .08) 21%, rgba(51, 51, 51, .1) 25%, rgba(51, 51, 51, .15) 33%, rgba(51, 51, 51, .18) 37%, rgba(42, 42, 42, .23) 45%, rgba(38, 38, 38, .25) 49%, rgba(3, 3, 3, .3) 60%, rgba(0, 0, 0, .31) 61%, rgba(0, 0, 0, .65) 100%);
+}
+
+.v-item{
+  position: absolute;
+  top: 8px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.h2{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 1.5em;
+  /*-webkit-margin-before: 0.83em;*/
+  /*-webkit-margin-after: 0.83em;*/
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+.v-item .h2 {
+  /*height: 18px;*/
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.v-item .h2 span {
+  height: 36px;
+  margin-bottom: 1pc;
+  color: #333;
+  font-size: 14px;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  padding-right: 5px;
+}
+
+
+.v-num {
+  padding-left: 15px;
+  background-position: 0 -131px;
+  color: #999;
+}
