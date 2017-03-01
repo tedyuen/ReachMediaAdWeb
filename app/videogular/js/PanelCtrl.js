@@ -1,7 +1,7 @@
 /**
  * Created by tedyuen on 01/03/2017.
  */
-videoApp.controller('PanelCtrl',['$scope','$location',function ($scope,$location) {
+videoApp.controller('PanelCtrl',['$scope','$location','$filter',function ($scope,$location,$filter) {
   $scope.praised = false;
   $scope.switchPraised = function () {
     $scope.praised = !$scope.praised;
@@ -12,10 +12,10 @@ videoApp.controller('PanelCtrl',['$scope','$location',function ($scope,$location
   }
 
   $scope.goUrl = function (data) {
-    console.log($location.absUrl());
-    console.log($location.absUrl()+"#!"+data.index);
-    // window.href.location = $location.absUrl()+"#!"+data.index;
-    // $location.path(data.indexUrl);
+    var url = $filter('limitTo')($location.absUrl(),$location.absUrl().length-2,0);
+    console.log(data.index);
+    $location.path(data.index);
+    $location.replace();
   }
 
 }]);
